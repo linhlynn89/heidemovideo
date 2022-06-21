@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="csrf-param" content="authenticity_token" />
+    <meta name="csrf-token" content="qnpwbKSYGziTt+Ymrir+80GAH+TlkwOuPrdn6XjdMEJPHVIQZ7yqNe+5xnk8qjHY8N0ojELYhWvUYehBeuBYHg==" />
+    <link rel="stylesheet" media="all" href="./application.css" data-turbolinks-track="reload" />
+    <script src="./application.js" data-turbolinks-track="reload"></script>
+    <title>Hei.io - AI Dubbing</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/png" sizes="16x16">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <meta name="google-site-verification" content="ON3pd9gN4Vn9Wq-UYQKcNr6yGNFOULgRKDCCHo8SpkY" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-876D5FTZD8"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      
+      gtag('config', 'G-876D5FTZD8');
+    </script>
+  </head>
+  <body id="main-wrapper" class="top-page ">
+    <div class="top-page">
+      <div class="container">
+        <div class="top-page__video audio-view" id="demo-video" language="Finnish">
+          <div class="editor-header mobile" style="display: none">
+            <h2>Try selecting effects</h2>
+            <div class="description">Using AI technology, we help you separate the original voice, voiceover and complex sound effects</div>
+          </div>
+          <div class="row">
+            <div class="col-lg-8 col-md-10 m-auto">
+              <div class="top-page__video--frame" style="position: relative;">
+                <video class="mx-100 w-100" id="source-video" muted="" playsinline="" poster="./assets/img-video.png" style="border-radius: 20px;">
+                  <source src="./videos/8bf1cadd-6eae-402c-93c6-1a96f66c5149/video_only_voiceover_1650358132.mp4" type="video/mp4">
+                  <track both_subtitles="./subtitles/8bf1cadd-6eae-402c-93c6-1a96f66c5149/vtt_both_subtitles.vtt" default="" id="video-track-subtitles" kind="captions" origin_subtitles="./subtitles/8bf1cadd-6eae-402c-93c6-1a96f66c5149/origin.vtt" src="/subtitles/8bf1cadd-6eae-402c-93c6-1a96f66c5149/vtt_translated.vtt" subtitle_type="translated_sub" translated_subtitles="/subtitles/8bf1cadd-6eae-402c-93c6-1a96f66c5149/vtt_translated.vtt">
+                </video>
+                <audio class="origin_audio" src="./videos/8bf1cadd-6eae-402c-93c6-1a96f66c5149/video/vocals.wav"></audio>
+                <audio class="background_sound" src="./videos/8bf1cadd-6eae-402c-93c6-1a96f66c5149/video/accompaniment.wav"></audio>
+                <audio class="translated_audio" src="./videos/8bf1cadd-6eae-402c-93c6-1a96f66c5149/translated_audio_1650358132.mp3"></audio>
+                <svg class="play-button bi bi-play" fill="currentColor" height="200" viewBox="0 0 16 16" width="200" xmlns="http://www.w3.org/2000/svg" style="">
+                  <path d="M10.804 8 5 4.633v6.734L10.804 8zm.792-.696a.802.802 0 0 1 0 1.392l-6.363 3.692C4.713 12.69 4 12.345 4 11.692V4.308c0-.653.713-.998 1.233-.696l6.363 3.692z"></path>
+                </svg>
+              </div>
+              <div class="top-page__video--languages bg-card cl-card slick-initialized slick-slider">
+                <button class="slick-prev slick-arrow slick-disabled" aria-label="Previous" type="button" aria-disabled="true" style="">Previous</button>
+                <div class="slick-list draggable">
+                  <div class="slick-track" style="opacity: 1; width: 620px; transform: translate3d(0px, 0px, 0px);">
+                    <div background_sound="./videos/8bf1cadd-6eae-402c-93c6-1a96f66c5149/video/accompaniment.wav" both_subtitles="./subtitles/8bf1cadd-6eae-402c-93c6-1a96f66c5149/vtt_both_subtitles.vtt" class="language-item slick-slide slick-current slick-active" language="Finnish" origin_audio="./videos/8bf1cadd-6eae-402c-93c6-1a96f66c5149/video/vocals.wav" origin_subtitles="./subtitles/8bf1cadd-6eae-402c-93c6-1a96f66c5149/origin.vtt" translated_audio="./videos/8bf1cadd-6eae-402c-93c6-1a96f66c5149/translated_audio_1650358132.mp3" translated_subtitles="/subtitles/8bf1cadd-6eae-402c-93c6-1a96f66c5149/vtt_translated.vtt" data-slick-index="0" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Finnish.png">
+                      <p class="mb-0">Finnish</p>
+                    </div>
+                    <div background_sound="./videos/7ca3715c-13c1-45b2-97e3-42abcc4bb0d9/video/accompaniment.wav" both_subtitles="./subtitles/7ca3715c-13c1-45b2-97e3-42abcc4bb0d9/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="French" origin_audio="./videos/7ca3715c-13c1-45b2-97e3-42abcc4bb0d9/video/vocals.wav" origin_subtitles="./subtitles/7ca3715c-13c1-45b2-97e3-42abcc4bb0d9/origin.vtt" translated_audio="./videos/7ca3715c-13c1-45b2-97e3-42abcc4bb0d9/translated_audio_1650357946.mp3" translated_subtitles="/subtitles/7ca3715c-13c1-45b2-97e3-42abcc4bb0d9/vtt_translated.vtt" data-slick-index="1" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/French.png">
+                      <p class="mb-0">French</p>
+                    </div>
+                    <div background_sound="./videos/b33e2afa-0b2d-473f-8421-d7dc96d6e852/video/accompaniment.wav" both_subtitles="./subtitles/b33e2afa-0b2d-473f-8421-d7dc96d6e852/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="Vietnamese" origin_audio="./videos/b33e2afa-0b2d-473f-8421-d7dc96d6e852/video/vocals.wav" origin_subtitles="./subtitles/b33e2afa-0b2d-473f-8421-d7dc96d6e852/origin.vtt" translated_audio="./videos/b33e2afa-0b2d-473f-8421-d7dc96d6e852/translated_audio_1650357809.mp3" translated_subtitles="/subtitles/b33e2afa-0b2d-473f-8421-d7dc96d6e852/vtt_translated.vtt" data-slick-index="2" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Vietnamese.png">
+                      <p class="mb-0">Vietnamese</p>
+                    </div>
+                    <div background_sound="./videos/757d1208-4491-4a45-bf41-6755d63c9cc9/video/accompaniment.wav" both_subtitles="./subtitles/757d1208-4491-4a45-bf41-6755d63c9cc9/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="Spanish" origin_audio="./videos/757d1208-4491-4a45-bf41-6755d63c9cc9/video/vocals.wav" origin_subtitles="./subtitles/757d1208-4491-4a45-bf41-6755d63c9cc9/origin.vtt" translated_audio="./videos/757d1208-4491-4a45-bf41-6755d63c9cc9/translated_audio_1650014682.mp3" translated_subtitles="/subtitles/757d1208-4491-4a45-bf41-6755d63c9cc9/vtt_translated.vtt" data-slick-index="3" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Spanish.png">
+                      <p class="mb-0">Spanish</p>
+                    </div>
+                    <div background_sound="./videos/0934080f-f981-4175-9282-cc019ea6e2bd/video/accompaniment.wav" both_subtitles="./subtitles/0934080f-f981-4175-9282-cc019ea6e2bd/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="Korean" origin_audio="./videos/0934080f-f981-4175-9282-cc019ea6e2bd/video/vocals.wav" origin_subtitles="./subtitles/0934080f-f981-4175-9282-cc019ea6e2bd/origin.vtt" translated_audio="./videos/0934080f-f981-4175-9282-cc019ea6e2bd/translated_audio_1650014278.mp3" translated_subtitles="/subtitles/0934080f-f981-4175-9282-cc019ea6e2bd/vtt_translated.vtt" data-slick-index="4" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Korean.png">
+                      <p class="mb-0">Korean</p>
+                    </div>
+                    <div background_sound="./videos/7827e016-500c-4963-bc1e-52cbfafdd45d/video/accompaniment.wav" both_subtitles="./subtitles/7827e016-500c-4963-bc1e-52cbfafdd45d/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="German" origin_audio="./videos/7827e016-500c-4963-bc1e-52cbfafdd45d/video/vocals.wav" origin_subtitles="./subtitles/7827e016-500c-4963-bc1e-52cbfafdd45d/origin.vtt" translated_audio="./videos/7827e016-500c-4963-bc1e-52cbfafdd45d/translated_audio_1650014270.mp3" translated_subtitles="/subtitles/7827e016-500c-4963-bc1e-52cbfafdd45d/vtt_translated.vtt" data-slick-index="5" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/German.png">
+                      <p class="mb-0">German</p>
+                    </div>
+                    <div background_sound="./videos/fbe7edd3-a04d-4999-a233-1652d77c84cb/video/accompaniment.wav" both_subtitles="./subtitles/fbe7edd3-a04d-4999-a233-1652d77c84cb/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="Arabic" origin_audio="./videos/fbe7edd3-a04d-4999-a233-1652d77c84cb/video/vocals.wav" origin_subtitles="./subtitles/fbe7edd3-a04d-4999-a233-1652d77c84cb/origin.vtt" translated_audio="./videos/fbe7edd3-a04d-4999-a233-1652d77c84cb/translated_audio_1650014170.mp3" translated_subtitles="/subtitles/fbe7edd3-a04d-4999-a233-1652d77c84cb/vtt_translated.vtt" data-slick-index="6" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Arabic.png">
+                      <p class="mb-0">Arabic</p>
+                    </div>
+                    <div background_sound="./videos/c3bc9029-d713-4eb4-bf63-df7aa9f2535d/video/accompaniment.wav" both_subtitles="./subtitles/c3bc9029-d713-4eb4-bf63-df7aa9f2535d/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="Hindi" origin_audio="./videos/c3bc9029-d713-4eb4-bf63-df7aa9f2535d/video/vocals.wav" origin_subtitles="./subtitles/c3bc9029-d713-4eb4-bf63-df7aa9f2535d/origin.vtt" translated_audio="./videos/c3bc9029-d713-4eb4-bf63-df7aa9f2535d/translated_audio_1650013931.mp3" translated_subtitles="/subtitles/c3bc9029-d713-4eb4-bf63-df7aa9f2535d/vtt_translated.vtt" data-slick-index="7" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Hindi.png">
+                      <p class="mb-0">Hindi</p>
+                    </div>
+                    <div background_sound="./videos/a9aa82ab-dd85-4d8a-a666-5a67c5724227/video/accompaniment.wav" both_subtitles="./subtitles/a9aa82ab-dd85-4d8a-a666-5a67c5724227/vtt_both_subtitles.vtt" class="language-item slick-slide slick-active" language="Portuguese" origin_audio="./videos/a9aa82ab-dd85-4d8a-a666-5a67c5724227/video/vocals.wav" origin_subtitles="./subtitles/a9aa82ab-dd85-4d8a-a666-5a67c5724227/origin.vtt" translated_audio="./videos/a9aa82ab-dd85-4d8a-a666-5a67c5724227/translated_audio_1650013949.mp3" translated_subtitles="/subtitles/a9aa82ab-dd85-4d8a-a666-5a67c5724227/vtt_translated.vtt" data-slick-index="8" aria-hidden="false" tabindex="0" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Portuguese.png">
+                      <p class="mb-0">Portuguese</p>
+                    </div>
+                    <div background_sound="./videos/9871390d-da71-4759-9f06-e32713b9fdb3/video/accompaniment.wav" both_subtitles="./subtitles/9871390d-da71-4759-9f06-e32713b9fdb3/vtt_both_subtitles.vtt" class="language-item slick-slide" language="Chinese" origin_audio="./videos/9871390d-da71-4759-9f06-e32713b9fdb3/video/vocals.wav" origin_subtitles="./subtitles/9871390d-da71-4759-9f06-e32713b9fdb3/origin.vtt" translated_audio="./videos/9871390d-da71-4759-9f06-e32713b9fdb3/translated_audio_1650013659.mp3" translated_subtitles="/subtitles/9871390d-da71-4759-9f06-e32713b9fdb3/vtt_translated.vtt" data-slick-index="9" aria-hidden="true" tabindex="-1" style="width: 62px;">
+                      <img class="language-item__flag" src="./assets/flag/Chinese.png">
+                      <p class="mb-0">Chinese</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="slick-next slick-arrow" aria-label="Next" type="button" style="" aria-disabled="false">Next</button>
+              </div>
+            </div>
+            <div class="col-lg-4 col-md-10 editor">
+              <div class="editor-header">
+                <h2>Try selecting effects</h2>
+                <div class="description">Using AI technology, we help you separate the original voice, voiceover and complex sound effects</div>
+              </div>
+              <div class="audio-view__control">
+                <div class="audio-view__control--item"><label class="d-block" for="cb-translated_audio">Voiceover Sound</label><input class="range-slider range-slider-red" id="output-volume-range" max="1" min="0" step="0.1" type="range" value="1" /><span class="ms-3" id="output-volume-value"></span></div>
+                <div class="audio-view__control--item"><label class="d-block" for="cb-origin_audio">Source sound</label><input class="range-slider range-slider-red" id="origin-volume-range" max="1" min="0" step="0.1" type="range" value="0" /><span class="ms-3" id="origin-volume-value"></span></div>
+                <div class="audio-view__control--item">
+                  <label class="d-block" for="cb-bg-sound">Background Sound</label>
+                  <div class="position-relative"><input type="checkbox" name="no_name" id="cb-bg-sound" class="styled-checkbox" checked="checked" /><label for="cb-bg-sound"></label></div>
+                </div>
+                <div class="audio-view__control--item">
+                  <label class="d-block" for="cb-origin-sub">Source subtitles</label>
+                  <div class="position-relative"><input type="checkbox" name="no_name" id="cb-origin-sub" class="styled-checkbox" /><label for="cb-origin-sub"></label></div>
+                </div>
+                <div class="audio-view__control--item">
+                  <label class="d-block" for="cb-translated-sub">Translated subtitles</label>
+                  <div class="position-relative"><input type="checkbox" name="no_name" id="cb-translated-sub" class="styled-checkbox" checked="checked" /><label for="cb-translated-sub"></label></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>var video_track_subtitles = $("#video-track-subtitles");
+      setTimeout(() => {
+        $('.top-page__video--languages').slick({
+          dots: false,
+          infinite: false,
+          speed: 300,
+          slidesToShow: 9 ,
+          slidesToScroll: 9,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 6,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 4
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3
+              }
+            }
+            // You can unslick at a given breakpoint now by adding:
+            // settings: "unslick"
+            // instead of a settings object
+          ]
+        });
+      }, 300);
+      $(document).on('click', '.language-item', function(){
+        const language = $(this).attr("language")
+        $("#source-video").trigger('pause')
+        origin_audio.setAttribute("src", $(this).attr("origin_audio"))
+        background_sound.setAttribute("src", $(this).attr("background_sound"))
+        translated_audio.setAttribute("src", $(this).attr("translated_audio"))
+        video_track_subtitles.attr("translated_subtitles", $(this).attr("translated_subtitles"))
+        video_track_subtitles.attr("origin_subtitles", $(this).attr("origin_subtitles"))
+        video_track_subtitles.attr("both_subtitles", $(this).attr("both_subtitles"))
+        switch(video_track_subtitles.attr("subtitle_type")) {
+          case 'translated_sub':
+            video_track_subtitles.attr("src", $(this).attr("translated_subtitles"))
+            break;
+          case 'origin_sub':
+            video_track_subtitles.attr("src", $(this).attr("origin_subtitles"))
+            break;
+          case 'both_sub':
+            video_track_subtitles.attr("src", $(this).attr("both_subtitles"))
+            break;
+          default:
+            video_track_subtitles.attr("src", "")
+        }
+        $("#demo-video").attr("language", $(this).attr("language"))
+        $("#source-video").trigger('click')
+      })
+      
+      $(document).on('change', '#cb-origin-sub, #cb-translated-sub', function(){
+        var origin_on = $("#cb-origin-sub").prop('checked')
+        var translated_on = $("#cb-translated-sub").prop('checked')
+        if(origin_on) {
+          if(translated_on){
+            video_track_subtitles.attr('src', video_track_subtitles.attr("both_subtitles"))
+            video_track_subtitles.attr("subtitle_type", "both_sub")
+          }else{
+            video_track_subtitles.attr('src', video_track_subtitles.attr("origin_subtitles"))
+            video_track_subtitles.attr("subtitle_type", "origin_sub")
+          }
+        } else {
+          if(translated_on){
+            video_track_subtitles.attr('src', video_track_subtitles.attr("translated_subtitles"))
+            video_track_subtitles.attr("subtitle_type", "translated_sub")
+          }else{
+            video_track_subtitles.attr('src', '')
+            video_track_subtitles.attr("subtitle_type", "none_sub")
+          }
+        }
+      })
+    </script>
+  </body>
+</html>
